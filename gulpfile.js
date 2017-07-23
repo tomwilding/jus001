@@ -105,6 +105,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('build', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+  connect = require('gulp-connect'),
   connect.server({
     root: 'app',
     port: process.env.PORT || 5000, // localhost:5000
