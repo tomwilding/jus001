@@ -103,3 +103,11 @@ gulp.task('sass', function() {
             stream: true
         }))
 });
+
+gulp.task('build', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+  connect.server({
+    root: 'app',
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
