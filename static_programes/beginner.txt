@@ -1,0 +1,6 @@
+Day1 Beginner Plan from JSP Fitness:
+
+1. Eat
+2. Workout
+3. Workout more
+4. Sleep
