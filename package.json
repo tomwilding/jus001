@@ -22,8 +22,5 @@
     "gulp-connect" : "^5.0.0",
     "gulp-less" : "^3.3.2",
     "jquery": "^1.11.3"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
