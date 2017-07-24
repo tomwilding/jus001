@@ -105,6 +105,8 @@ gulp.task('sass', function() {
 });
 
 gulp.task('build', ['less', 'minify-css', 'minify-js'], function() {
+  var sys = require('sys'),
+    exec = require('child_process').exec;
   exec('node server.js', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
