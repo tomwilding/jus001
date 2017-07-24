@@ -105,4 +105,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('build', ['less', 'minify-css', 'minify-js'], function() {
+  exec('node server.js', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  }
 });
