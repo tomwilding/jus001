@@ -109,5 +109,5 @@ gulp.task('build', ['less', 'minify-css', 'minify-js'], function() {
     console.log(stdout);
     console.log(stderr);
     cb(err);
-  }
+  });
 });
