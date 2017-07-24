@@ -108,7 +108,7 @@ gulp.task('build', ['browserSync', 'less', 'minify-css', 'minify-js'], function(
   connect = require('gulp-connect');
   connect.server({
     root: "app",
-    port: 80,
+    port: 8080,
     livereload: false
   });
 });
