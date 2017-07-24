@@ -104,11 +104,5 @@ gulp.task('sass', function() {
         }))
 });
 
-gulp.task('build', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
-  connect = require('gulp-connect');
-  connect.server({
-    root: "app",
-    port: 8080,
-    livereload: false
-  });
+gulp.task('build', ['less', 'minify-css', 'minify-js'], function() {
 });
