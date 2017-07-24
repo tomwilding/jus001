@@ -9,6 +9,7 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
   },
   "devDependencies": {
+    "connect" : "^"
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
     "font-awesome": "^4.6.3",
@@ -24,7 +25,6 @@
     "jquery": "^1.11.3"
   },
   "scripts": {
-    "start": "node app",
-    "postinstall": "gulp build"
+    "start": "node server.js"
   }
 }
